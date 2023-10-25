@@ -14,17 +14,23 @@ public class Main {
                 .usePlaintext()
                 .build();
         ProductInfoGrpc.ProductInfoBlockingStub stub = ProductInfoGrpc.newBlockingStub(channel);
-        ProductInfoOuterClass.ProductID productID = stub.addProduct(
-                ProductInfoOuterClass.Product.newBuilder()
-                        .setName("Apple iPhone 11")
-                        .setDescription("Meet Apple iPhone 11. " +
-                                "All-new dual-camera system with " +
-                                "Ultra Wide and Night mode.")
-                        .setId("1")
-                        .build());
-         System.out.println(productID.getId());
-        ProductInfoOuterClass.Product product = stub.getProduct(productID);
-        System.out.println(product.toString());
-        channel.shutdown();
+       try{
+
+               ProductInfoOuterClass.ProductID productID = stub.addProduct(
+                       ProductInfoOuterClass.Product.newBuilder()
+                       .setName("Apple iPhone 11")
+                       .setDescription("Meet Apple iPhone 11. " +
+                       "All-new dual-camera system with " +
+                       "Ultra Wide and Night mode.")
+                       .setId("1")
+                       .build());
+                       System.out.println(productID.getId());
+                       ProductInfoOuterClass.Product product = stub.getProduct(productID);
+                       System.out.println(product.toString());
+                }catch(Exception e){
+                        System.out.println("Error: " + e.getClass()+" >>> " + e.getMessage());
+                
+                }
+                       channel.shutdown();
     }
 }

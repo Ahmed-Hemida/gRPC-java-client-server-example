@@ -1,4 +1,4 @@
-package com.grpc.generated;
+package com.grpc.grpcImpl;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;

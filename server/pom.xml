@@ -64,7 +64,7 @@
                         <outputTargets>
                             <outputTarget>
                                 <type>java</type> 
-                                <outputDirectory>src/main/java/com/grpc/Impl</outputDirectory>
+                                <outputDirectory>src/main/java/com/grpc/grpcImpl</outputDirectory>
                             </outputTarget>  
 							<outputTarget>
 								<type>grpc-java</type>

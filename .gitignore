@@ -1,1 +1,4 @@
 /server-java17
+
+/server/target
+/client/target

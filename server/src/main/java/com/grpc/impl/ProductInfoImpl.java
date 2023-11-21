@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import com.grpc.GRPC.ProductInfoGrpc;
-import com.grpc.GRPC.ProductInfoOuterClass;
+import com.grpc.grpcImpl.ProductInfoGrpc;
+import com.grpc.grpcImpl.ProductInfoOuterClass;
 
 import io.grpc.Status;
 import io.grpc.StatusException;

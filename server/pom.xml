@@ -69,7 +69,7 @@
 							<outputTarget>
 								<type>grpc-java</type>
 								<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.0.1</pluginArtifact>
-							 <outputDirectory>src/main/java/com/grpc/Impl</outputDirectory>
+							 <outputDirectory>src/main/java/com/grpc/grpcImpl</outputDirectory>
 							</outputTarget>
 
                         </outputTargets>
